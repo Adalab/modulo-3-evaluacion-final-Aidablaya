@@ -1,0 +1,22 @@
+@import '../core/mixins.scss';
+
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5px; 
+  justify-content: center;
+  
+  @include tablet {
+    margin: 0 50px 0 50px;
+    
+}
+  
+  &__li {
+    list-style: none;
+    
+    
+  }
+
+}
+

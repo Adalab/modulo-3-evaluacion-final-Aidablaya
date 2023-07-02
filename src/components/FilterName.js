@@ -1,3 +1,6 @@
+import '../styles/layout/FilterName.scss'
+
+
 const FilterName = ({searchName, handleFilter}) => {
 
     const handleSearchName = (ev) => {
@@ -6,13 +9,14 @@ const FilterName = ({searchName, handleFilter}) => {
       };
 
     return (
-        <form>
-        <input type="text"
-        name="search_name"
-        id="search_name" 
-        value= {searchName}
-        onChange= {handleSearchName} />
-      </form>
+        <form className="form">
+          <label className='form__text'>¿A quién buscas?</label>
+          <input className="form__input" type="text"
+          name="search_name"
+          id="search_name" 
+          value= {searchName}
+          onChange= {handleSearchName} />
+        </form>
     )
 };
 

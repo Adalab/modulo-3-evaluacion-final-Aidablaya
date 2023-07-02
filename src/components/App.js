@@ -4,7 +4,7 @@ import '../styles/App.scss';
 import { useState,useEffect } from 'react';
 import getApi from '../services/api';
 import List from './List';
-import RYM from '../images/rick-y-morty.png';
+import RYM from '../images/rick-y-morty1.png';
 import FilterName from './FilterName';
 import {Route, Routes } from 'react-router-dom';
 import CharacterDetail from './CharacterDetail';
@@ -58,7 +58,7 @@ function App() {
           <img className="header__img" src={RYM} alt="" />
         </header>
 
-        <main>
+        <main className='main'>
           <Routes>
             <Route
               path="/"

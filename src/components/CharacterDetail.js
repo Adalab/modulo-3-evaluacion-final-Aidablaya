@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom";
+import '../styles/layout/CharacterDetail.scss'
 
 const CharacterDetail = ({ list }) => {
   const { characterId } = useParams();
@@ -9,14 +10,14 @@ const CharacterDetail = ({ list }) => {
   if (characterData) {
     const status = characterData.status === "Alive" ? "vivo" : "muerto";
     return (
-      <div>
-        <section>
-          <h2>{characterData.name}</h2>
-          <img src={characterData.image} alt={characterData.name} />
-          <h3>{characterData.species}</h3>
-          <h2>{characterData.planet}</h2>
-          <p>{characterData.episode.length}</p>
-          <p>{status}</p>
+      <div className="box">
+        <section className="box__detail">
+          <h2 className="box__detail--title">{characterData.name}</h2>
+          <img className="box__detail--img" src={characterData.image} alt={characterData.name} />
+          <h3 className="box__detail--specie">Especie: {characterData.species}</h3>
+          <h4 className="box__detail--planet">Procedencia: {characterData.planet}</h4>
+          <p className="box__detail--episode">Numero de episodios donde aparece: {characterData.episode.length}</p>
+          <p className="box__detail--status">{status}</p>
           <Link to="/">Volver</Link>
         </section>
       </div>
