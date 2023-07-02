@@ -10,7 +10,10 @@ const getApi = () => {
           id:objectAPI.id,
           name:objectAPI.name,
           image:objectAPI.image,
-          species:objectAPI.species
+          species:objectAPI.species,
+          planet:objectAPI.origin.name,
+          episode:objectAPI.episode,
+          status:objectAPI.status
 
         }
       });
