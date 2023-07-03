@@ -10,7 +10,7 @@ const Character = ({eachContact}) => {
                 <p className="listCharacter__text">{eachContact.species}</p>
             </div>
         </Link>
-    )
+)
 }
 
 export default Character;

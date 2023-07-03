@@ -44,7 +44,7 @@ function App() {
     setSearchSpecie(varValue);
   }
 
-};
+  };
 
   const filterCharacter = list
   .filter((eachCharacter) => eachCharacter.name.toLowerCase().includes(searchName.toLowerCase()))
@@ -59,7 +59,7 @@ function App() {
 
   const characterData= list.find((character)=> character.id === characterId);
 
-  console.log(characterData);
+ 
 
   return (
     

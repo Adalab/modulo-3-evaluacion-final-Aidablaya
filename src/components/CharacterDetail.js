@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
-import '../styles/layout/CharacterDetail.scss'
-import dead from '../images/lapida-sepulcral.png'
+import '../styles/layout/CharacterDetail.scss';
+import dead from '../images/lapida-sepulcral.png';
 
 const CharacterDetail = ({ list }) => {
   const { characterId } = useParams();
