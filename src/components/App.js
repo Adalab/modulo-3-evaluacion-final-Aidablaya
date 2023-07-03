@@ -4,12 +4,12 @@ import '../styles/App.scss';
 import { useState,useEffect } from 'react';
 import getApi from '../services/api';
 import List from './List';
-import RYM from '../images/rick-y-morty1.png';
+import RYM from '../images/rick-y-morty2.png';
 import FilterName from './FilterName';
 import {Route, Routes } from 'react-router-dom';
 import CharacterDetail from './CharacterDetail';
 import {useLocation, matchPath} from 'react-router';
-
+import FilterSpecie from './FilterSpecie';
 
 
 
@@ -20,6 +20,9 @@ function App() {
 
   const [searchName,setSearchName] = useState ('');
 
+  const [searchSpecie, setSearchSpecie] = useState ([]);
+
+  const [species, setSpecies] = useState([]);
 
   
 
@@ -27,6 +30,8 @@ function App() {
   useEffect(()=> {
     getApi().then((cleanData)=> {
       setList(cleanData);
+      const uniqueSpecies = [...new Set(cleanData.map((character) => character.species))];
+      setSpecies(uniqueSpecies);
     });
    }, []);
 
@@ -34,11 +39,16 @@ function App() {
 
   const handleFilter = (varName, varValue) => {
     if ( varName === 'name'){
-    setSearchName(varValue)
-  }};
+    setSearchName(varValue);
+  } else if (varName === 'species') {
+    setSearchSpecie(varValue);
+  }
+
+};
 
   const filterCharacter = list
-  .filter((eachCharacter) => eachCharacter.name.toLowerCase().includes(searchName.toLowerCase()));
+  .filter((eachCharacter) => eachCharacter.name.toLowerCase().includes(searchName.toLowerCase()))
+  .filter((eachCharacter) => searchSpecie.length === 0 || searchSpecie.includes(eachCharacter.species));
 
   //OBTENER INFO DE CONTACTO  
   const {pathname} = useLocation();
@@ -65,6 +75,7 @@ function App() {
               element={
                 <>
                   <FilterName searchName={searchName} handleFilter={handleFilter} />
+                  <FilterSpecie searchSpecie={searchSpecie} species={species} handleFilter={handleFilter}/>
                   <List list={filterCharacter} />
                 </>
               }

@@ -6,10 +6,28 @@
   justify-content: center;
   text-align: center;
   height: 100%; 
-    &__img {
-        width: 60%;
-        border-radius: 25%;
-        border: 2px solid rgb(252, 252, 252);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    }
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  &__img {
+      width: 60%;
+      border-radius: 25%;
+      border: 2px solid rgb(252, 252, 252);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  &__title {
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  &__text {
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+  }
+
+  
+
+}
+a:link {
+  text-decoration: none;
 }
