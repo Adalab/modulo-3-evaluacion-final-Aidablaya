@@ -17,7 +17,7 @@ const getApi = () => {
 
         }
       });
-
+      cleanData.sort((a,b)=> a.name.localeCompare(b.name))
       console.log(cleanData);
       return cleanData;
     })
