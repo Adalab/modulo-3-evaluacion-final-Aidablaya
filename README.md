@@ -1,5 +1,5 @@
 # Trabajo final de módulo 3.
-En este módulo hemos aprendido un nuevo framework, Read y el trabajo final consiste en realizar un página web. Como objetivos principales:
+En este módulo hemos aprendido un nuevo framework, React y el trabajo final consiste en realizar un página web. Como objetivos principales:
 - Pintar elementos de una lista a partir de peticiones a una API
 - Poder filtrar los elementos según su nombre
 - Creación de componentes de cada página
@@ -11,3 +11,7 @@ Aparte de los objetivos se han añadido mejoras en la funcionalidad y visualizac
 - Botón de retroceso
 - Uso de grid en scss para pintar personajes
 - Ordenar lista de personajes 
+
+
+HERRAMIENTAS
+VISUAL ESTUDIO CODE/ REACT /SCSS
