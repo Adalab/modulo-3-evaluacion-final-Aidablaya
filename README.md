@@ -14,4 +14,4 @@ Aparte de los objetivos se han añadido mejoras en la funcionalidad y visualizac
 
 
 HERRAMIENTAS
-VISUAL ESTUDIO CODE/ REACT /SCSS
+VSC / HTML / REACT / SCSS / GITHUB / NPM
