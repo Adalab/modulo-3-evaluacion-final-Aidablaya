@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e2489ff0.css",
+    "main.js": "./static/js/main.ca3ff720.js",
+    "static/media/rick-y-morty2.png": "./static/media/rick-y-morty2.3ae0fd4b5f1430035d09.png",
+    "static/media/lapida-sepulcral.png": "./static/media/lapida-sepulcral.cad225eccd4b328f6115.png",
+    "index.html": "./index.html",
+    "main.e2489ff0.css.map": "./static/css/main.e2489ff0.css.map",
+    "main.ca3ff720.js.map": "./static/js/main.ca3ff720.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2489ff0.css",
+    "static/js/main.ca3ff720.js"
+  ]
+}
